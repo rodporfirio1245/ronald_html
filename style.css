@@ -1,0 +1,364 @@
+/* ESTILO GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+body {
+    background-color: beige;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1600px;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(0, 0, 0);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2;
+}
+
+h2.titulo {
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: blue;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px rgb(60, 60, 60);
+    transform: scale(1.05);
+}
+
+/* ESTILO CABECALHO */
+
+header {
+    padding: 40px 4%;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color: beige;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #1e1e1e49;
+    text-decoration: none;
+    display: inline-block;
+    transition: .1;
+}
+
+header a:hover {
+    color: black;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+button {
+    /* Cor da fonte (substitua #ff0000 pelo código de cor desejado) */
+    color: #ffffff;
+}
+
+
+
+
+/* Estilo do topo do site */
+
+section.topo-do-site {
+    padding: 200px 4%;
+}
+
+section.topo-do-site p {
+    width: 60%;
+    /* ou qualquer valor desejado */
+    padding: 1px;
+    /* ou qualquer valor desejado */
+    margin: 1px;
+    /* ou qualquer valor desejado */
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+}
+
+.topo-do-site h1 {
+    font-size: 30px;
+}
+
+.topo-do-site .txt-topo-site p {
+    margin: 25px 0;
+}
+
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+
+/* Especialidades */
+
+section.especialidades {
+    padding: 80px 4%;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+
+.especialidades .especialidades-box {
+    padding: 60px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #00000073;
+}
+
+
+
+
+
+
+.especialidades .especialidades-box i {
+    font-size: 70px;
+    color: blue;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 26px;
+    margin: 15px 15px 0;
+}
+
+
+
+/* Sobre mim */
+
+section.sobre {
+    padding: 150px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre span {
+    color: blue;
+    display: block;
+}
+
+.sobre .txt-sobre .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: blue;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+/* section contato */
+
+
+section.contato {
+    background-color: #f5f5f5;
+    padding: 80px 4%;
+}
+
+section.contato h2 {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.contato p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section.contato form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+section.contato form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+section.contato form input,
+section.contato form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+section.contato form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+section.contato form button:hover {
+    box-shadow: 0px 0px 8px rgb(60, 60, 60);
+    transform: scale(1.05);
+}
+
+
+
+/* RODAPE */
+
+.rodape {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno */
+    margin-bottom: 40px;
+
+
+    width: 100%; /* Largura total do rodapé */
+}
+
+.rodape p {
+    text-align: center; /* Centraliza o texto no rodapé */
+    margin: 0; /* Remove as margens */
+}
+
+
+
+/* Responsivo mobile */
+
+@media screen and (max-width: 1204px) {
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    .topo-do-site img {
+        max-width: 100%;
+        /* A imagem terá no máximo a largura do contêiner pai */
+        height: auto;
+        /* Mantém a proporção da altura da imagem */
+    }
+
+    /* cabecalho */
+
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    /* topo do site */
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 25px;
+        padding: 30px 0;
+    }
+
+    section.especialidades {
+        padding: 40px 8%;
+    }
+
+
+    h2.titulo {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+}
