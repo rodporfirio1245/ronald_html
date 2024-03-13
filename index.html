@@ -197,6 +197,18 @@
         }
     </script><!--fim valida form-->
 
+
+<script>
+    function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    }
+</script>
+
+
+
         <section class="rodape">
             <footer>
                 <div class="interface">
@@ -206,17 +218,6 @@
             
         </section><!--fim rodape-->
 
-
-
-        <script>
-            function scrollToSection(sectionId) {
-                var section = document.getElementById(sectionId);
-                if (section) {
-                    section.scrollIntoView({ behavior: "smooth", block: "start" });
-                }
-            }
-        </script>
-        
         
 
     </main>
