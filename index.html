@@ -20,6 +20,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- fim boostrap icon -->
     <title>Ronald Porfirio</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        /* Restante do seu CSS aqui */
+    </style>
 </head>
 
 <body>
@@ -34,10 +44,10 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#especialidade">Especialidade</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#inicio" onclick="scrollToSection('inicio')">Inicio</a></li>
+                    <li><a href="#especialidade" onclick="scrollToSection('especialidade')">Especialidade</a></li>
+                    <li><a href="#sobre" onclick="scrollToSection('sobre')">Sobre</a></li>
+                    <li><a href="#projetos" onclick="scrollToSection('projetos')">Projetos</a></li>
                 </ul>
             </nav>
             
@@ -198,6 +208,16 @@
 
 
 
+        <script>
+            function scrollToSection(sectionId) {
+                var section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+            }
+        </script>
+        
+        
 
     </main>
 
